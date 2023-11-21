@@ -157,7 +157,7 @@ you_lab = ck.CTkButton(log, image = you_img, text='', width=50,fg_color='#202225
 inter_lab = ck.CTkButton(log, image = inter_img, text='', width=50,fg_color='#202225', bg_color='#202225', hover_color='#f7f0fa', command=lambda:site_page()).place(x=903, y=430)
 
 # ------------------------------ Le titre de la page Login.
-welcome_label = ck.CTkLabel(login_frame, text='  Ets Dankanka S.A  ', text_color='#115d6c', font=('Helvetica', 35, 'bold', 'underline'), bg_color='#202225').place(x=590, y=20)
+welcome_label = ck.CTkLabel(login_frame, text='  Ets Chamhasi50 S.A  ', text_color='#115d6c', font=('Helvetica', 35, 'bold', 'underline'), bg_color='#202225').place(x=585, y=20)
 slogan_label = ck.CTkLabel(login_frame, text='Tout ce que tu fais, tu le fais pour toi meme !', text_color='white', font=('Helvetica', 13), bg_color='#202225').place(x=620, y=60)
 
 # ------------------------------ Les entry de la page Login.
@@ -169,9 +169,9 @@ user_entry.place(x=550, y=150)
 pass_entry.place(x=550, y=200)
 
 # ------------------------------ Les button pour le login page.
-login_button = ck.CTkButton(login_frame, text='Se connecter', text_color='#e0f2f1', font=('Ariel', 20, 'bold'), width=400, height=50, bg_color='#202225', fg_color='#115d6c',hover_color='#115d6c', command=check).place(x=550, y=250)
+login_button = ck.CTkButton(login_frame, text='Login', text_color='#e0f2f1', font=('Ariel', 20, 'bold'), width=400, height=50, bg_color='#202225', fg_color='#115d6c',hover_color='#115d6c', command=check).place(x=550, y=250)
 
-logout_button = ck.CTkButton(login_frame, text='Changer le mot de passe', text_color='#e0f2f1', font=('Ariel', 20, 'bold'), width=400, height=50, bg_color='#202225', fg_color='#115d6c', hover_color='#115d6c', command=change).place(x=550, y=310)
+logout_button = ck.CTkButton(login_frame, text='Change Password', text_color='#e0f2f1', font=('Ariel', 20, 'bold'), width=400, height=50, bg_color='#202225', fg_color='#115d6c', hover_color='#115d6c', command=change).place(x=550, y=310)
 
 # ------------------------------ Le button d'interface.
 show_hide_button = ck.CTkButton(login_frame, width=30, corner_radius=8, text='', image=show_image, bg_color='#202225', fg_color='#202225', hover_color='#202225',command=show)
@@ -183,23 +183,23 @@ lock_img = ck.CTkImage(Image.open(file_path + 'Images/log.png'), size=(450, 470)
 lock_lab = ck.CTkLabel(change_frame, image = lock_img, bg_color='#202225', text='').place(x=30, y=10)
 
 
-welcome_label = ck.CTkLabel(change_frame, text='  Ets Dankanka S.A  ', text_color='#854ddc', font=('Helvetica', 35, 'bold', 'underline'), bg_color='#202225').place(x=590, y=20)
+welcome_label = ck.CTkLabel(change_frame, text='  Ets Chamhasi50 S.A  ', text_color='#854ddc', font=('Helvetica', 35, 'bold', 'underline'), bg_color='#202225').place(x=585, y=20)
 slogan_label = ck.CTkLabel(change_frame, text='Tout ce que tu fais, tu le fais pour toi meme !', text_color='white', font=('Helvetica', 13), bg_color='#202225').place(x=620, y=60)
 
-new_user_entry = ck.CTkEntry(change_frame, font=('Ariel', 17, 'bold'), width=400, height=40, border_width=1, border_color='#854ddc', text_color='#f7f0fa', placeholder_text='Agent T000', bg_color='#202225', fg_color='#202225')
+new_user_entry = ck.CTkEntry(change_frame, font=('Ariel', 17, 'bold'), width=400, height=40, border_width=1, border_color='#854ddc', text_color='#f7f0fa', placeholder_text='Username', bg_color='#202225', fg_color='#202225')
 
-new_pass_entry = ck.CTkEntry(change_frame, font=('Ariel', 17, 'bold'), show='⏣', width=400, height=40, border_width=1, border_color='#854ddc',text_color='#f7f0fa', placeholder_text='Nouveau Mot De Passe', bg_color='#202225', fg_color='#202225')
+new_pass_entry = ck.CTkEntry(change_frame, font=('Ariel', 17, 'bold'), show='⏣', width=400, height=40, border_width=1, border_color='#854ddc',text_color='#f7f0fa', placeholder_text='New Password', bg_color='#202225', fg_color='#202225')
 
-pass_conf_entry = ck.CTkEntry(change_frame, font=('Ariel', 17, 'bold'), show='⏣', width=400, height=40, border_width=1, border_color='#854ddc',text_color='#f7f0fa', placeholder_text='Confirmer Le Mot De Passe', bg_color='#202225', fg_color='#202225')
+pass_conf_entry = ck.CTkEntry(change_frame, font=('Ariel', 17, 'bold'), show='⏣', width=400, height=40, border_width=1, border_color='#854ddc',text_color='#f7f0fa', placeholder_text='Comferm Password', bg_color='#202225', fg_color='#202225')
 
 new_user_entry.place(x=550, y=150)
 new_pass_entry.place(x=550, y=200)
 pass_conf_entry.place(x=550, y=250)
 
 # Le button pour la connexion
-change_button = ck.CTkButton(change_frame, text='Changer le mot de passe', text_color='#f7f0fa', font=('Ariel', 20, 'bold'), width=400, height=50, bg_color='#202225', fg_color='#854ddc',hover_color='#854ddc',command=insert).place(x=550, y=310)
+change_button = ck.CTkButton(change_frame, text='Change', text_color='#f7f0fa', font=('Ariel', 20, 'bold'), width=400, height=50, bg_color='#202225', fg_color='#854ddc',hover_color='#854ddc',command=insert).place(x=550, y=310)
 
-have_account = ck.CTkButton(change_frame, text="Ce connecter à un compte existent", text_color='#f7f0fa', font=('Helvetica', 15, 'underline'), fg_color='#202225', bg_color='#202225', hover_color='#202225', command=exists).place(x=630, y=375)
+have_account = ck.CTkButton(change_frame, text="I already have an account", text_color='#f7f0fa', font=('Helvetica', 15, 'underline'), fg_color='#202225', bg_color='#202225', hover_color='#202225', command=exists).place(x=630, y=375)
 
 
 login_frame.pack(padx=5, pady=5)
